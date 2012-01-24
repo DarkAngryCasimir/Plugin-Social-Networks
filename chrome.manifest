@@ -1,0 +1,16 @@
+content social-networks-plugin  chrome/content/
+locale  social-networks-plugin  en-US  chrome/locale/en-US/
+skin    social-networks-plugin  classic/1.0 chrome/skin/
+
+
+overlay chrome://nightingale/content/xul/layoutWithBrowserOverlay.xul chrome://social-networks-plugin/content/scripts-overlay.xul
+
+overlay chrome://nightingale/content/xul/layoutWithBrowserOverlay.xul chrome://social-networks-plugin/content/menu-overlay.xul
+
+
+overlay chrome://nightingale/content/xul/layoutWithBrowserOverlay.xul chrome://social-networks-plugin/content/toolbar-overlay.xul
+
+
+overlay chrome://nightingale/content/xul/layoutWithBrowserOverlay.xul chrome://social-networks-plugin/content/commands-overlay.xul
+
+

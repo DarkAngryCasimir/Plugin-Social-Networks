@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://nightingale/content/bindings/bindings.css" type="text/css"?>
+<?xml-stylesheet href="chrome://nightingale/skin/nightingale.css" type="text/css" title="Skin"?>
+
+<!DOCTYPE page SYSTEM "chrome://social-networks-plugin/locale/overlay.dtd">
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Social Networks plugin">
+
+  <vbox flex="1">
+    <description value="&social-networks-plugin.servicepane.label;" />
+    <label class="text-link" value="&social-networks-plugin.servicepane.link;" href="http://wiki.getnightingale.com/Developer/Reference_Docs/Components/ServicePane" />
+  </vbox>
+
+</window>

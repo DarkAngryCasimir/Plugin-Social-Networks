@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+     xmlns:nightingale="http://www.getnightingale.com/2007/addon-metadata-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{b359fb9e-293e-4bc7-af6f-388ae1201aaa}</em:id>
+    <em:type>2</em:type>
+    <em:name>Social Networks plugin</em:name>
+    <em:version>0.1</em:version>
+    <em:creator>Dark_Angry_Casimir</em:creator>
+
+
+    <em:description>Plugin for Nightingale, which allows user to publish on social networks what is played in Nightingale</em:description>
+
+
+
+
+
+    <em:optionsURL>chrome://social-networks-plugin/content/options.xul</em:optionsURL>
+
+
+    <em:iconURL>chrome://social-networks-plugin/skin/icon_addon.png</em:iconURL>
+
+
+    <em:targetApplication>
+      <Description>
+        <em:id>nightingale@getnightingale.com</em:id>
+        <em:minVersion>1.8.0</em:minVersion>
+        <em:maxVersion>1.11.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+
+
+
+
+    <!-- Register a pane to be displayed below the service sidebar.
+         See http://wiki.getnightingale.com/Developer/Articles/Getting_Started/Display_Panes -->
+    <nightingale:displayPane>
+      <Description>
+        <nightingale:contentTitle>Social Networks plugin</nightingale:contentTitle>
+        <nightingale:contentUrl>chrome://social-networks-plugin/content/pane.xul</nightingale:contentUrl>
+        <nightingale:contentIcon>chrome://social-networks-plugin/skin/pane-icon.png</nightingale:contentIcon>
+        <nightingale:defaultWidth>200</nightingale:defaultWidth>
+        <nightingale:defaultHeight>100</nightingale:defaultHeight>
+        <nightingale:suggestedContentGroups>sidebar;contentpane;servicepane</nightingale:suggestedContentGroups>
+        <nightingale:showOnInstall>true</nightingale:showOnInstall>
+      </Description>
+    </nightingale:displayPane>
+
+
+
+    <!-- Register a custom media page.
+         See http://wiki.getnightingale.com/Developer/Articles/Getting_Started/Building_Media_Views -->
+    <nightingale:mediaPage>
+      <Description>
+        <nightingale:contentTitle>Social Networks plugin</nightingale:contentTitle>
+        <nightingale:contentUrl>chrome://social-networks-plugin/content/media-page.xul</nightingale:contentUrl>
+        <nightingale:contentIcon>chrome://social-networks-plugin/skin/mediaview-icon.png</nightingale:contentIcon>
+      </Description>
+    </nightingale:mediaPage>
+
+  </Description>
+</RDF>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://social-networks-plugin/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://social-networks-plugin/locale/overlay.dtd">
+<overlay id="social-networks-plugin-menu-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <!-- Target the tools menu -->
+  <menupopup id="menu_ToolsPopup"> 
+
+    <!-- Add a menu item -->
+    <menuitem id="social-networks-plugin-helloworld-menuitem"
+            label="&social-networks-plugin.helloworld.label;" 
+            accesskey="&social-networks-plugin.helloworld.accesskey;" 
+            insertafter="devToolsSeparator"
+            command="social-networks-plugin-helloworld-cmd" />   
+     
+  </menupopup>
+
+</overlay>
