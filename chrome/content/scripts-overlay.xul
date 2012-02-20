@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<overlay id="social-networks-plugin-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="socialnetworks-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script src="main.js"/>
 
   <stringbundleset id="stringbundleset"> 
-     <stringbundle id="social-networks-plugin-strings" src="chrome://social-networks-plugin/locale/overlay.properties"/>
+     <stringbundle id="socialnetworks-strings" src="chrome://socialnetworks/locale/overlay.properties"/>
   </stringbundleset>  
 
 </overlay>

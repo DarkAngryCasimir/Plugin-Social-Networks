@@ -4,13 +4,17 @@
 <?xml-stylesheet href="chrome://nightingale/content/bindings/bindings.css" type="text/css"?>
 <?xml-stylesheet href="chrome://nightingale/skin/nightingale.css" type="text/css" title="Skin"?>
 
-<!DOCTYPE page SYSTEM "chrome://social-networks-plugin/locale/overlay.dtd">
+<!DOCTYPE page SYSTEM "chrome://socialnetworks/locale/overlay.dtd">
 
-<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Social Networks plugin">
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Social-Networks">
 
   <vbox flex="1">
-    <description value="&social-networks-plugin.servicepane.label;" />
-    <label class="text-link" value="&social-networks-plugin.servicepane.link;" href="http://wiki.getnightingale.com/Developer/Reference_Docs/Components/ServicePane" />
+    <description value="Plugin Social Networks for Nightingale" />
+    <label value="Learn More about Service Pane" />
+  </vbox>
+  
+  <vbox flex="1">
+    <label value="Options" />
   </vbox>
 
 </window>
