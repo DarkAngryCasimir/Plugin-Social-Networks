@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<overlay id="socialnetworks-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="plugin-social-networks-for-nightingale-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script src="main.js"/>
 
   <stringbundleset id="stringbundleset"> 
-     <stringbundle id="socialnetworks-strings" src="chrome://socialnetworks/locale/overlay.properties"/>
+     <stringbundle id="plugin-social-networks-for-nightingale-strings" src="chrome://plugin-social-networks-for-nightingale/locale/overlay.properties"/>
   </stringbundleset>  
 
 </overlay>

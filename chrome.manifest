@@ -1,9 +1,9 @@
-content socialnetworks  chrome/content/
-locale  socialnetworks  en-US  chrome/locale/en-US/
-skin    socialnetworks  classic/1.0 chrome/skin/
+content plugin-social-networks-for-nightingale  chrome/content/
+locale  plugin-social-networks-for-nightingale  en-US  chrome/locale/en-US/
+skin    plugin-social-networks-for-nightingale  classic/1.0 chrome/skin/
 
 
-overlay chrome://nightingale/content/xul/layoutWithBrowserOverlay.xul chrome://socialnetworks/content/scripts-overlay.xul
+overlay chrome://nightingale/content/xul/layoutWithBrowserOverlay.xul chrome://plugin-social-networks-for-nightingale/content/scripts-overlay.xul
 
 
 

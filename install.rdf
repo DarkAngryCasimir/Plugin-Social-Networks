@@ -2,21 +2,21 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
      xmlns:nightingale="http://www.getnightingale.com/2007/addon-metadata-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>{cc4721c3-4a77-4462-a8cf-e9ec6939452e}</em:id>
+    <em:id>{6f0ce25d-11f6-4c7f-a224-b1b2474b8061}</em:id>
     <em:type>2</em:type>
-    <em:name>Social-Networks</em:name>
+    <em:name>Plugin Social Networks for Nightingale</em:name>
     <em:version>1.0.0.0</em:version>
     <em:creator>Dark_Angry_Casimir</em:creator>
 
 
-    <em:description>Plugin for Nightingale</em:description>
+    <em:description>Plugin which allow you to share the music you are listening to !</em:description>
 
 
 
 
 
 
-    <em:iconURL>chrome://socialnetworks/skin/icon_addon.png</em:iconURL>
+    <em:iconURL>chrome://plugin-social-networks-for-nightingale/skin/icon_addon.png</em:iconURL>
 
 
     <em:targetApplication>

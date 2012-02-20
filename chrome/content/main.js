@@ -1,13 +1,13 @@
 
 // Make a namespace.
-if (typeof Socialnetworks == 'undefined') {
-  var Socialnetworks = {};
+if (typeof PluginSocialNetworksForNightingale == 'undefined') {
+  var PluginSocialNetworksForNightingale = {};
 }
 
 /**
  * UI controller that is loaded into the main player window
  */
-Socialnetworks.Controller = {
+PluginSocialNetworksForNightingale.Controller = {
 
   /**
    * Called when the window finishes loading
@@ -20,12 +20,11 @@ Socialnetworks.Controller = {
 
     // initialization code
     this._initialized = true;
-    this._strings = document.getElementById("socialnetworks-strings");
+    this._strings = document.getElementById("plugin-social-networks-for-nightingale-strings");
     
-	
     // Perform extra actions the first time the extension is run
-    if (Application.prefs.get("extensions.socialnetworks.firstrun").value) {
-      Application.prefs.setValue("extensions.socialnetworks.firstrun", false);
+    if (Application.prefs.get("extensions.plugin-social-networks-for-nightingale.firstrun").value) {
+      Application.prefs.setValue("extensions.plugin-social-networks-for-nightingale.firstrun", false);
       this._firstRunSetup();
     }
 
@@ -50,7 +49,7 @@ Socialnetworks.Controller = {
   _firstRunSetup : function() {
   
     // Call this.doHelloWorld() after a 3 second timeout
-    alert("premier lancement");
+    setTimeout(function(controller) { controller.doHelloWorld(); }, 3000, this); 
   
   },
 
@@ -77,17 +76,17 @@ Socialnetworks.Controller = {
     }
 
      
-	var addonNode = this._servicePaneService.getNode('SB:Socialnetworks');
+	var addonNode = this._servicePaneService.getNode('SB:PluginSocialNetworksForNightingale');
 	if (!addonNode) {
 		var myNode = this._servicePaneService.createNode();
-		myNode.id = 'SB:Socialnetworks';
-		myNode.url = 'chrome://socialnetworks/content/mainview.xul';
-		myNode.image = 'chrome://socialnetworks/skin/node-icon.png';
-		myNode.className = 'Socialnetworks';
-		myNode.name = 'Social-Networks';
+		myNode.id = 'SB:PluginSocialNetworksForNightingale';
+		myNode.url = 'chrome://plugin-social-networks-for-nightingale/content/mainview.xul';
+		myNode.image = 'chrome://plugin-social-networks-for-nightingale/skin/node-icon.png';
+		myNode.className = 'PluginSocialNetworksForNightingale';
+		myNode.name = 'Plugin Social Networks for Nightingale';
 		myNode.setAttributeNS('http://getnightingale.com/rdf/servicepane#',
                           "addonID",
-                          "{cc4721c3-4a77-4462-a8cf-e9ec6939452e}");
+                          "{6f0ce25d-11f6-4c7f-a224-b1b2474b8061}");
 
 		servicesNode.appendChild(myNode);
 
@@ -106,5 +105,5 @@ Socialnetworks.Controller = {
   
 };
 
-window.addEventListener("load", function(e) { Socialnetworks.Controller.onLoad(e); }, false);
-window.addEventListener("unload", function(e) { Socialnetworks.Controller.onUnLoad(e); }, false);
+window.addEventListener("load", function(e) { PluginSocialNetworksForNightingale.Controller.onLoad(e); }, false);
+window.addEventListener("unload", function(e) { PluginSocialNetworksForNightingale.Controller.onUnLoad(e); }, false);
