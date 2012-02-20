@@ -1,0 +1,21 @@
+<!ENTITY share.label    "Share song">
+<!ENTITY prefs.general.label              "General">
+<!ENTITY prefs.software.label             "Software">
+<!ENTITY prefs.options.label              "Options">
+<!ENTITY prefs.social.username.label      "Username :">
+<!ENTITY prefs.social.password.label      "Password :">
+<!ENTITY prefs.social.playsaccount.label  "Post songs in reply to account">
+<!ENTITY prefs.social.mainaccount.label   "Post songs on my main account">
+<!ENTITY prefs.social.activate.label      "Post for each song">
+<!ENTITY prefs.social.messagebefore.label "Message before:">
+<!ENTITY prefs.social.music.before.label  "Before song info:">
+<!ENTITY prefs.social.messageafter.label  "Message after:">
+<!ENTITY prefs.social.music.after.label   "After song info:">
+<!ENTITY prefs.activate.skype.label       "Activate Skype">
+<!ENTITY prefs.activate.text.label        "Activate Text file">
+<!ENTITY prefs.txtfile.path.label         "Text file Path :">
+<!ENTITY prefs.paused.label               "Clear on pause">
+<!ENTITY prefs.order.label                "Order :">
+<!ENTITY prefs.statusbar.label            "Show icon in status bar">
+<!ENTITY prefs.toolbar.label              "Show icon in toolbar">
+<!ENTITY prefs.experimental.label        "(Experimental, more info here)">

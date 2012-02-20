@@ -8,9 +8,48 @@
 
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Plugin Social Networks for Nightingale">
 
-  <vbox flex="1">
-    <description value="Plugin Social Networks for Nightingale" />
-    <label class="text-link" value="label" />
-  </vbox>
-
+	<vbox>
+		<description value="Plugin Social Networks for Nightingale" />
+		<label value="Welcome to the brand new plugin for nightingale : Social Networks ! Here you can enable the options you want." />
+	</vbox>
+  
+	<vbox>
+		<groupbox>
+		<caption label="Facebook" />
+			<vbox flex="1">
+				<description value="Sharing options on Facebook" />
+				<checkbox flex="1" label="Share the name of the artist" tabindex="1" 
+					oncommand="setText('tab-text','1');" />
+				<checkbox flex="1" label="Share the title of the song" tabindex="2" 
+					oncommand="setText('tab-text','2');" />
+				<checkbox flex="1" label="Share the title of the album" tabindex="3" 
+					oncommand="setText('tab-text','3');" />
+			</vbox>
+		</groupbox>
+		<groupbox>
+		<caption label="Google +" />
+			<vbox flex="1">
+				<description value="Sharing options on Google +" />
+				<checkbox flex="1" label="Share the name of the artist" tabindex="1" 
+					oncommand="setText('tab-text','1');" />
+				<checkbox flex="1" label="Share the title of the song" tabindex="2" 
+					oncommand="setText('tab-text','2');" />
+				<checkbox flex="1" label="Share the title of the album" tabindex="3" 
+					oncommand="setText('tab-text','3');" />
+			</vbox>
+		</groupbox>
+		<groupbox>
+		<caption label="Twitter" />
+			<vbox flex="1">
+				<description value="Sharing options on Twitter" />
+				<checkbox flex="1" label="Share the name of the artist" tabindex="1" 
+					oncommand="setText('tab-text','1');" />
+				<checkbox flex="1" label="Share the title of the song" tabindex="2" 
+					oncommand="setText('tab-text','2');" />
+				<checkbox flex="1" label="Share the title of the album" tabindex="3" 
+					oncommand="setText('tab-text','3');" />
+			</vbox>
+		</groupbox>
+	</vbox>
+ 
 </window>
