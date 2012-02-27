@@ -8,6 +8,8 @@
 <!DOCTYPE page SYSTEM "chrome://plugin-social-networks-for-nightingale/locale/overlay.dtd">
 
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Plugin Social Networks for Nightingale">
+	
+	<script src="Login.js" />
 
 	<vbox>
 		<description class="title" value="Plugin Social Networks for Nightingale" />
@@ -42,6 +44,10 @@
 		</groupbox>
 		<groupbox class="section">
 		<caption label="Twitter" />
+			<hbox align="center">
+				<button label="Connection to Twitter" 
+					oncommand="openLoginTwitter();"/>
+			</hbox>
 			<vbox flex="1">
 				<description class="categorie" value="Sharing options on Twitter" />
 				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 
@@ -53,5 +59,6 @@
 			</vbox>
 		</groupbox>
 	</vbox>
+
  
 </window>

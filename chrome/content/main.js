@@ -100,9 +100,6 @@ PluginSocialNetworksForNightingale.Controller = {
   }
   },
   
-
-
-  
 };
 
 window.addEventListener("load", function(e) { PluginSocialNetworksForNightingale.Controller.onLoad(e); }, false);

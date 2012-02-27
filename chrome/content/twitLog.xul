@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://plugin-social-networks-for-nightingale/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://nightingale/content/bindings/bindings.css" type="text/css"?>
+<?xml-stylesheet href="chrome://nightingale/skin/nightingale.css" type="text/css" title="Skin"?>
+
+<!DOCTYPE page SYSTEM "chrome://plugin-social-networks-for-nightingale/locale/overlay.dtd">
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Plugin Social Networks for Nightingale">
+
+	<vbox>
+		<description class="title2" value="Connection to Twitter" />
+		<separator flex="1" />
+		<label class="description2" value="Enter your login/password to connect Nightingale to your Twitter account" />
+	</vbox>
+
+	<vbox flex="1" style="overflow: auto" >
+		<hbox align="center">
+			<label class="form" value="Login:"/>
+			<textbox id="default" oninput="" />
+		</hbox>
+		<hbox align="center">
+			<label class="form" value="Password:" />
+			<textbox id="password" type="password"
+               oninput="" />
+		</hbox>
+	</vbox>
+	
+</window>
