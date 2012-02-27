@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
 <?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://plugin-social-networks-for-nightingale/skin/overlay.css" type="text/css"?>
 <?xml-stylesheet href="chrome://nightingale/content/bindings/bindings.css" type="text/css"?>
 <?xml-stylesheet href="chrome://nightingale/skin/nightingale.css" type="text/css" title="Skin"?>
 
@@ -9,45 +10,46 @@
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Plugin Social Networks for Nightingale">
 
 	<vbox>
-		<description value="Plugin Social Networks for Nightingale" />
-		<label value="Welcome to the brand new plugin for nightingale : Social Networks ! Here you can enable the options you want." />
+		<description class="title" value="Plugin Social Networks for Nightingale" />
+		<separator flex="1" />
+		<label class="description" value="Welcome to the brand new plugin for nightingale : Social Networks ! Here you can enable the options you want." />
 	</vbox>
   
 	<vbox>
-		<groupbox>
+		<groupbox class="section">
 		<caption label="Facebook" />
 			<vbox flex="1">
-				<description value="Sharing options on Facebook" />
-				<checkbox flex="1" label="Share the name of the artist" tabindex="1" 
-					oncommand="setText('tab-text','1');" />
-				<checkbox flex="1" label="Share the title of the song" tabindex="2" 
-					oncommand="setText('tab-text','2');" />
-				<checkbox flex="1" label="Share the title of the album" tabindex="3" 
-					oncommand="setText('tab-text','3');" />
+				<description class="categorie" value="Sharing options on Facebook" />
+				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 
+					oncommand="" />
+				<checkbox class="radio" flex="1" label="Share the title of the song" tabindex="2" 
+					oncommand="" />
+				<checkbox class="radio" flex="1" label="Share the title of the album" tabindex="3" 
+					oncommand="" />
 			</vbox>
 		</groupbox>
-		<groupbox>
+		<groupbox class="section">
 		<caption label="Google +" />
 			<vbox flex="1">
-				<description value="Sharing options on Google +" />
-				<checkbox flex="1" label="Share the name of the artist" tabindex="1" 
-					oncommand="setText('tab-text','1');" />
-				<checkbox flex="1" label="Share the title of the song" tabindex="2" 
-					oncommand="setText('tab-text','2');" />
-				<checkbox flex="1" label="Share the title of the album" tabindex="3" 
-					oncommand="setText('tab-text','3');" />
+				<description class="categorie" value="Sharing options on Google +" />
+				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 
+					oncommand="" />
+				<checkbox class="radio" flex="1" label="Share the title of the song" tabindex="2" 
+					oncommand="" />
+				<checkbox class="radio" flex="1" label="Share the title of the album" tabindex="3" 
+					oncommand="" />
 			</vbox>
 		</groupbox>
-		<groupbox>
+		<groupbox class="section">
 		<caption label="Twitter" />
 			<vbox flex="1">
-				<description value="Sharing options on Twitter" />
-				<checkbox flex="1" label="Share the name of the artist" tabindex="1" 
-					oncommand="setText('tab-text','1');" />
-				<checkbox flex="1" label="Share the title of the song" tabindex="2" 
-					oncommand="setText('tab-text','2');" />
-				<checkbox flex="1" label="Share the title of the album" tabindex="3" 
-					oncommand="setText('tab-text','3');" />
+				<description class="categorie" value="Sharing options on Twitter" />
+				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 
+					oncommand="" />
+				<checkbox class="radio" flex="1" label="Share the title of the song" tabindex="2" 
+					oncommand="" />
+				<checkbox class="radio" flex="1" label="Share the title of the album" tabindex="3" 
+					oncommand="" />
 			</vbox>
 		</groupbox>
 	</vbox>

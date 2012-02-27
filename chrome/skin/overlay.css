@@ -1,2 +1,27 @@
+.title {
+	margin-left: 14px;
+	margin-top: 20px;
+	color: #9E6E07;
+	font-size:24pt;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
 
+.description{
+	font-size: 10pt;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	margin-left: 20px;
+}
 
+.section{
+	margin-left: 30px;
+}
+
+.categorie{
+	font-size: 10pt;
+}
+
+.radio{
+	margin-left: 20px;
+}
