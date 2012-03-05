@@ -14,17 +14,22 @@
 		<separator flex="1" />
 		<label class="description2" value="Enter your login/password to connect Nightingale to your Twitter account" />
 	</vbox>
-
-	<vbox flex="1" style="overflow: auto" >
-		<hbox align="center">
-			<label class="form" value="Login:"/>
-			<textbox id="default" oninput="" />
-		</hbox>
-		<hbox align="center">
-			<label class="form" value="Password:" />
-			<textbox id="password" type="password"
-               oninput="" />
-		</hbox>
-	</vbox>
+	<groupbox>
+		<vbox flex="1" style="overflow: auto" >
+			<hbox align="left">
+				<label class="form" value="Login:"/>
+				<textbox id="default" oninput="" />
+			</hbox>
+			<hbox align="left">
+				<label class="form" value="Password:" />
+				<textbox id="password" type="password"
+					oninput="" />
+			</hbox>
+			<hbox align="center">
+				<button label="OK" 
+					oncommand="" />
+			</hbox>
+		</vbox>
+	</groupbox>	
 	
 </window>

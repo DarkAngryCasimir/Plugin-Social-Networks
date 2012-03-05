@@ -11,15 +11,15 @@
 	
 	<script src="Login.js" />
 
-	<vbox>
+	<vbox flex="1">
 		<description class="title" value="Plugin Social Networks for Nightingale" />
-		<separator flex="1" />
+		<separator />
 		<label class="description" value="Welcome to the brand new plugin for nightingale : Social Networks ! Here you can enable the options you want." />
 	</vbox>
   
-	<vbox>
+	<vbox flex="1" style="overflow: auto">
 		<groupbox class="section">
-		<caption label="Facebook" />
+			<caption label="Facebook" />
 			<vbox flex="1">
 				<description class="categorie" value="Sharing options on Facebook" />
 				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 
@@ -30,8 +30,9 @@
 					oncommand="" />
 			</vbox>
 		</groupbox>
+		
 		<groupbox class="section">
-		<caption label="Google +" />
+			<caption label="Google +" />
 			<vbox flex="1">
 				<description class="categorie" value="Sharing options on Google +" />
 				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 
@@ -42,8 +43,9 @@
 					oncommand="" />
 			</vbox>
 		</groupbox>
+		
 		<groupbox class="section">
-		<caption label="Twitter" />
+			<caption label="Twitter" />
 			<hbox align="center">
 				<button label="Connection to Twitter" 
 					oncommand="openLoginTwitter();"/>
@@ -58,7 +60,6 @@
 					oncommand="" />
 			</vbox>
 		</groupbox>
+	
 	</vbox>
-
- 
 </window>

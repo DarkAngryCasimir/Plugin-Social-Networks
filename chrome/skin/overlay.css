@@ -26,10 +26,11 @@
 	font-size: 8pt;
 	font-weight: bold;
 	font-family: Arial, sans-serif;
+	white-space : pre-wrap;
 }
 
 .form{
-	width: 10em;
+	width: 5em;
 }
 
 .section{

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+
+<window title="XUL Scrolling"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<description><html:h1>XUL Scrolling</html:h1></description>
+
+<vbox flex="1">
+		<description class="title" value="Plugin Social Networks for Nightingale" />
+		<separator flex="1" />
+		<label class="description" value="Welcome to the brand new plugin for nightingale : Social Networks ! Here you can enable the options you want." />
+</vbox>
+
+<vbox flex="1" style="overflow: auto">
+
+   <groupbox>
+   <caption label="blabla caption" />
+   <vbox flex="1" >
+
+     <button label="Button #1" />
+     <button label="Button #2" />
+     <button label="Button #3" />
+     <button label="Button #4" />
+     <button label="Button #5" />
+     <button label="Button #6" />
+     <button label="Button #7" />
+     <button label="Button #8" />
+     <button label="Button #9" />
+
+   </vbox>
+   </groupbox>
+   
+   <groupbox>
+   <caption label="The list limited in height, auto overflow" />
+   <vbox flex="1">
+     <button label="Button #1" />
+     <button label="Button #2" />
+     <button label="Button #3" />
+     <button label="Button #4" />
+
+     <button label="Button #5" />
+     <button label="Button #6" />
+     <button label="Button #7" />
+     <button label="Button #8" />
+     <button label="Button #9" />
+   </vbox>
+   </groupbox>
+
+</vbox>
+
+</window>
