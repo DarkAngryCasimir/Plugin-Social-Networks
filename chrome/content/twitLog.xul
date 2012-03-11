@@ -14,27 +14,33 @@
 	<script type="text/javascript" src="main.js"></script>	
 	
 	<script type="text/javascript">
-		var oauth = OAuth({
-		consumerKey: 'oUvTfyJznbKsn4OzGSHdgg',
-		consumerSecret: 'KfVp4sAGOjMjyIyqNSInT9aaMZH2a5HvmbI89R2M',
-		accessTokenKey: '260722806-oRJbUZZoNINh3UU4fHmuk6PZnubEDS7fB0DpA8Fq',
-		accessTokenSecret:'fAGhxinK86z3gzir8wdvVpKNEPAMJLxYZDQcDruGN0'
-	});
-	
-	alert('hello');
-	
-	oauth.get('http://api.twitter.com/1/', success, failure);
+		var oauth, options;
 
-	function success(data){
-    var timeline = JSON.parse(data.text);
-    timeline.forEach(function (element){
-        alert(element.text);
-    });
-	}
- 
-	function failure(data) {
-		alert("Throw rotten fruit, something failed");
-	}	
+		options = {
+			consumerKey: '1VwvgqQ7SDgZUopim88ujA',
+			consumerSecret: 'T7RB9qzZGkWNugRofbO5RqD7EhaKubbVzBcbuwmk',
+			requestTokenUrl: 'https://api.twitter.com/oauth/request_token',
+			authorizationUrl: 'https://api.twitter.com/oauth/authorize',
+			accessTokenUrl: 'https://api.twitter.com/oauth/access_token'
+		};
+		
+		oauth = OAuth(options);
+		
+		var requestParams;
+		
+		var optionsRequest = {
+			method: 'GET',
+			url: options.requestTokenUrl,
+			success: function(){ 
+				alert('yes');
+
+			},
+			failure: function(){ alert('no');}
+		};
+		
+		oauth.request(optionsRequest);
+		
+		alert('end');
 	</script>
 	
 	
