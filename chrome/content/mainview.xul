@@ -9,8 +9,10 @@
 
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Plugin Social Networks for Nightingale">
 	
-	<script src="Login.js" />
-
+	<script type="text/javascript" src="Login.js"></script>
+	<script type="text/javascript" src="jsOAuth-1.3.3.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
 	<vbox flex="1">
 		<description class="title" value="Plugin Social Networks for Nightingale" />
 		<separator />
@@ -20,6 +22,10 @@
 	<vbox flex="1" style="overflow: auto">
 		<groupbox class="section">
 			<caption label="Facebook" />
+			<hbox align="center">
+				<button label="Connection to Facebook" 
+					oncommand="openLoginFacebook();"/>
+			</hbox>
 			<vbox flex="1">
 				<description class="categorie" value="Sharing options on Facebook" />
 				<checkbox class="radio" flex="1" label="Share the name of the artist" tabindex="1" 

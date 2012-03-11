@@ -8,7 +8,36 @@
 <!DOCTYPE page SYSTEM "chrome://plugin-social-networks-for-nightingale/locale/overlay.dtd">
 
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Plugin Social Networks for Nightingale">
+	
+	<script type="text/javascript" src="Login.js"></script>
+	<script type="text/javascript" src="jsOAuth-1.3.3.js"></script>
+	<script type="text/javascript" src="main.js"></script>	
+	
+	<script type="text/javascript">
+		var oauth = OAuth({
+		consumerKey: 'oUvTfyJznbKsn4OzGSHdgg',
+		consumerSecret: 'KfVp4sAGOjMjyIyqNSInT9aaMZH2a5HvmbI89R2M',
+		accessTokenKey: '260722806-oRJbUZZoNINh3UU4fHmuk6PZnubEDS7fB0DpA8Fq',
+		accessTokenSecret:'fAGhxinK86z3gzir8wdvVpKNEPAMJLxYZDQcDruGN0'
+	});
+	
+	alert('hello');
+	
+	oauth.get('http://api.twitter.com/1/', success, failure);
 
+	function success(data){
+    var timeline = JSON.parse(data.text);
+    timeline.forEach(function (element){
+        alert(element.text);
+    });
+	}
+ 
+	function failure(data) {
+		alert("Throw rotten fruit, something failed");
+	}	
+	</script>
+	
+	
 	<vbox>
 		<description class="title2" value="Connection to Twitter" />
 		<separator flex="1" />
@@ -18,16 +47,15 @@
 		<vbox flex="1" style="overflow: auto" >
 			<hbox align="left">
 				<label class="form" value="Login:"/>
-				<textbox id="default" oninput="" />
+				<textbox id="form_login" />
 			</hbox>
 			<hbox align="left">
 				<label class="form" value="Password:" />
-				<textbox id="password" type="password"
-					oninput="" />
+				<textbox id="form_password" type="password" />
 			</hbox>
 			<hbox align="center">
 				<button label="OK" 
-					oncommand="" />
+					oncommand="connectTwitter(document.getElementById('form_login').value, document.getElementById('form_password').value)" />
 			</hbox>
 		</vbox>
 	</groupbox>	
